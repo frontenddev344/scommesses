@@ -449,8 +449,9 @@ section.terms.politic {
 //casino-inner-page
 
 section.casino-inner-page {
-    background: url(../img/Casino-di-Venezia.jpg);
+    background: url(../img/Casino-Vall.jpeg);
     @include bg-pro;
+    background-position: center;
 
     .bnr-text {
         text-align: center;
@@ -733,6 +734,22 @@ section.contattaci.about {
 
 }
 
+section.casino-inner-page.municipale {
+    background: url(../img/Municipal-c.jpeg);
+    @include bg-pro;
+    background-position: center;
+}
+
+section.casino-inner-page.ovenezia {
+    background: url(../img/Casino-venezia.jpeg);
+    @include bg-pro;
+    background-position: center;
+}
+section.casino-inner-page.perla{
+    background: url(../img/Casino-pearl.jpeg);
+    @include bg-pro;
+    background-position: center;
+}
 
 
 @import'./responsive';

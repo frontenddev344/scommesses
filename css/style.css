@@ -409,7 +409,7 @@ section.terms.politic {
 }
 
 section.casino-inner-page {
-  background: url(../img/Casino-di-Venezia.jpg);
+  background: url(../img/Casino-Vall.jpeg);
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,6 +417,7 @@ section.casino-inner-page {
   align-items: center;
   z-index: 1;
   position: relative;
+  background-position: center;
 }
 section.casino-inner-page .bnr-text {
   text-align: center;
@@ -674,6 +675,42 @@ section.missione-wrapper .missione p span {
 
 section.contattaci.about {
   background: url(../img/about-bnr.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background-position: center;
+}
+
+section.casino-inner-page.municipale {
+  background: url(../img/Municipal-c.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background-position: center;
+}
+
+section.casino-inner-page.ovenezia {
+  background: url(../img/Casino-venezia.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background-position: center;
+}
+
+section.casino-inner-page.perla {
+  background: url(../img/Casino-pearl.jpeg);
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
