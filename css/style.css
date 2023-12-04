@@ -672,6 +672,18 @@ section.missione-wrapper .missione p span {
   font-weight: 500;
 }
 
+section.contattaci.about {
+  background: url(../img/about-bnr.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background-position: center;
+}
+
 @media screen and (max-width: 1199px) {
   .casinos-italy {
     background: none;

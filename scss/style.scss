@@ -50,7 +50,7 @@ ul {
 }
 
 a.site-logo img {
-    max-width:  200px;
+    max-width: 200px;
 }
 
 .page-header.is-sticky {
@@ -726,6 +726,12 @@ section.missione-wrapper {
     }
 }
 
+section.contattaci.about {
+    background: url(../img/about-bnr.jpg);
+    @include bg-pro;
+    background-position: center;
+
+}
 
 
 
