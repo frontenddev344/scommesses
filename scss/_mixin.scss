@@ -1,0 +1,39 @@
+@mixin hero-overlly {
+    background: url(../img/Hero-Overlay.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+@mixin bg-pro {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+@mixin home-bnr {
+    background: url(../img/home-bnr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    object-fit: cover;
+    padding: 100px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+}

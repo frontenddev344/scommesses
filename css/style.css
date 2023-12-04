@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-seri;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 999;
+  width: 100%;
+}
+
+.page-header.is-sticky {
+  position: fixed;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  padding: 14px 0;
+  backdrop-filter: blur(10px);
+  animation: slideDown 0.35s ease-out;
+  background-color: #2e3986;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.navbar-area {
+  padding: 4px 0;
+}
+
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-navbar ul li {
+  padding: 0 20px;
+}
+.site-navbar ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s ease-out 0s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.nav-toggler {
+  border: 3px solid transparent;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.nav-toggler span:before {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: 0.3s;
+  content: "";
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: 0.3s;
+  content: "";
+  transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+section.banner-sectio {
+  background: url(../img/home-bnr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  object-fit: cover;
+  padding: 100px 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 1;
+}
+section.banner-sectio .hero-overlly {
+  background: url(../img/Hero-Overlay.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+section.banner-sectio .bnr-text {
+  text-align: center;
+}
+section.banner-sectio .bnr-text h1 {
+  color: #fff;
+}
+section.banner-sectio .bnr-text p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  max-width: 70%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+.casinos-italy {
+  background: url(../img/PromoBG.png);
+  background-color: transparent;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: 100% 0;
+  position: relative;
+  top: -229px;
+  margin-bottom: -190px;
+  z-index: 1;
+  padding: 180px 0 50px;
+}
+.casinos-italy h3 {
+  text-align: center;
+  color: #2e3986;
+  font-size: 30px;
+  font-weight: 600;
+}
+.casinos-italy .casinos-italy-wrapper {
+  padding: 100px 0 80px 0;
+}
+.casinos-italy .casinos-italy-wrapper .row {
+  justify-content: center;
+  margin-top: 50px;
+}
+.casinos-italy .casinos-italy-wrapper .row .col-lg-4:last-child {
+  margin-top: 30px;
+}
+.casinos-italy .casinos-italy-wrapper .box-section {
+  background: #fff;
+  padding: 10px;
+  height: 100%;
+  transition: all 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.casinos-italy .casinos-italy-wrapper .box-section:hover {
+  transform: translateY(-6px);
+}
+.casinos-italy .casinos-italy-wrapper .box-section figure {
+  margin: 0;
+}
+.casinos-italy .casinos-italy-wrapper .box-section figure img {
+  height: 312px;
+  object-fit: cover;
+}
+.casinos-italy .casinos-italy-wrapper .box-section .box-text {
+  padding: 20px 10px;
+}
+.casinos-italy .casinos-italy-wrapper .box-section .box-text h4 {
+  color: #2e3986;
+  font-size: 20px;
+  line-height: 28px;
+}
+.casinos-italy .casinos-italy-wrapper .box-section .box-text h6 {
+  color: rgba(0, 0, 0, 0.3411764706);
+  font-size: 16px;
+  line-height: 24px;
+}
+.casinos-italy .casinos-italy-wrapper .box-section .box-text h6 span {
+  color: #2e3986;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.casinos-italy .casinos-italy-wrapper .box-section .box-text .box-btn a {
+  background-color: #2e3986;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #2e3986;
+  transition: all 0.3s ease-in-out;
+}
+.casinos-italy .casinos-italy-wrapper .box-section .box-text .box-btn a:hover {
+  background-color: transparent;
+  color: #2e3986;
+  border: 1px solid #2e3986;
+}
+
+section.scommesses-wrapper {
+  padding: 40px 0 80px;
+}
+section.scommesses-wrapper .scommesses-inner .game-inner-text {
+  background-color: #2e3986;
+  border-radius: 6px;
+  color: #fff;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+section.scommesses-wrapper .scommesses-inner .game-inner-text p {
+  font-size: 15px;
+  line-height: 26px;
+}
+section.scommesses-wrapper .scommesses-inner .game-inner-text::before {
+  width: 95%;
+  height: 95%;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  bottom: -12px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  background-color: rgb(227, 225, 217);
+  content: "";
+  position: absolute;
+}
+
+footer {
+  background: #25374f url(../img/Footer.png) no-repeat;
+  background-size: cover;
+  padding-top: 3.4rem;
+}
+footer .footer-logo img {
+  max-width: 200px;
+}
+footer .footer-logo ul {
+  display: flex;
+  margin-top: 20px;
+}
+footer .footer-logo ul li {
+  padding-right: 16px;
+}
+footer .footer-logo ul li i {
+  color: #fff;
+  font-size: 16px;
+}
+footer .footer-menu h3 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+footer .footer-menu ul li a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0;
+  display: inline-block;
+}
+footer .footer-menu ul li a i {
+  padding: 0 10px 0px 0;
+}
+footer .wrapper {
+  margin-top: 40px;
+  background-color: #2e3986;
+  padding: 20px 0;
+}
+footer .wrapper p {
+  margin: 0;
+  color: #fff;
+}
+
+section.terms {
+  background: url(../img/Terms.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+section.terms .hero-overlly {
+  background: url(../img/Hero-Overlay.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+section.terms h2 {
+  color: #fff;
+  text-align: center;
+}
+
+section.term {
+  padding: 100px 0;
+}
+section.term .condition_wrap h5 {
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #2e3986;
+}
+section.term .condition_wrap p {
+  font-size: 16px;
+  color: #000;
+  line-height: 30px;
+}
+section.term .condition_wrap ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  color: #000;
+  line-height: 30px;
+}
+section.term .condition_wrap ul li::before {
+  position: absolute;
+  content: "";
+  background: #2e3986;
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 0;
+  border-radius: 50%;
+}
+
+section.terms.politic {
+  background: url(../img/politica.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.casino-inner-page {
+  background: url(../img/Casino-di-Venezia.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+section.casino-inner-page .bnr-text {
+  text-align: center;
+  color: #fff;
+}
+section.casino-inner-page .hero-overlly {
+  background: url(../img/Hero-Overlay.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+section.immerso-sec {
+  padding: 80px 0;
+  background-color: rgba(224, 222, 214, 0.2784313725);
+}
+section.immerso-sec .immerso-wrapper {
+  background-color: #fff;
+  border-radius: 6px;
+  color: #000;
+  padding: 30px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+section.immerso-sec .immerso-wrapper p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+section.casinos-italy.casino-di-venezia {
+  background: none;
+  top: 0px;
+  margin-bottom: 0px;
+  z-index: 1;
+  padding: 0px;
+}
+section.casinos-italy.casino-di-venezia .casinos-italy-wrapper h3 {
+  color: #2e3986;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+section.casinos-italy.casino-di-venezia .casinos-italy-wrapper .row .col-lg-4:nth-child(4),
+section.casinos-italy.casino-di-venezia .casinos-italy-wrapper .row .col-lg-4:nth-child(5),
+section.casinos-italy.casino-di-venezia .casinos-italy-wrapper .row .col-lg-4:nth-child(6),
+section.casinos-italy.casino-di-venezia .casinos-italy-wrapper .row .col-lg-4:nth-child(7),
+section.casinos-italy.casino-di-venezia .casinos-italy-wrapper .row .col-lg-4:nth-child(8) {
+  margin-top: 30px;
+}
+
+.contattaci {
+  background: url(../img/contattaci.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.contattaci .bnr-text {
+  text-align: center;
+}
+.contattaci .bnr-text h2 {
+  color: #fff;
+  text-transform: capitalize;
+}
+.contattaci .hero-overlly {
+  background: url(../img/Hero-Overlay.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+section.contact-wrapepr {
+  padding: 80px 0;
+}
+section.contact-wrapepr .contact-wrapepr-inner {
+  margin-top: 50px;
+}
+section.contact-wrapepr .contact-wrapepr-inner .row {
+  align-items: center;
+}
+section.contact-wrapepr .form-wrapper {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 50px;
+}
+section.contact-wrapepr .form-wrapper .form_div {
+  display: flex;
+}
+section.contact-wrapepr .form-wrapper .form_div input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 28px;
+  margin-right: 14px;
+}
+section.contact-wrapepr .form-wrapper textarea#w3review {
+  width: 100%;
+  padding: 16px;
+  margin-right: 14px;
+}
+section.contact-wrapepr .form-wrapper input#sub {
+  padding: 14px 50px;
+  background-color: #2e3986;
+  color: #fff;
+  border: none;
+  margin-top: 40px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  border: 1px solid #2e3986;
+  transition: all 0.3s ease-in-out;
+}
+section.contact-wrapepr .form-wrapper input#sub:hover {
+  background-color: transparent;
+  color: #2e3986;
+  border: 1px solid #2e3986;
+}
+section.contact-wrapepr .contact-item {
+  padding: 50px 30px;
+  background: #2e3986;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 360px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.contact-wrapepr .contact-item .contact-thumb {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  background-color: #25374f;
+  margin: 0 auto 30px;
+  position: relative;
+}
+section.contact-wrapepr .contact-item .contact-thumb::before {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+  border-width: 25px;
+  z-index: 1 !important;
+  border-color: #25374f !important;
+}
+section.contact-wrapepr .contact-item .contact-thumb::after {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+  border-width: 15px;
+  z-index: 1 !important;
+  border-color: #25374f !important;
+}
+section.contact-wrapepr .contact-item .contact-thumb img {
+  width: auto;
+  z-index: 2;
+}
+section.contact-wrapepr .contact-item .contact-content h6 {
+  color: #fff;
+  margin-top: 1.5rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+section.contact-wrapepr .contact-item .contact-content p {
+  color: #fff;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
+section.missione-wrapper {
+  padding: 80px 0;
+}
+section.missione-wrapper .missione h5 {
+  text-transform: capitalize;
+  color: #2e3986;
+  font-size: 22px;
+}
+section.missione-wrapper .missione p {
+  color: #000;
+  font-size: 16px;
+  line-height: 30px;
+}
+section.missione-wrapper .missione p span {
+  color: #2e3986;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+  .casinos-italy {
+    background: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-toggler {
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 94px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+    color: #2e3986;
+  }
+  ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  .casinos-italy .casinos-italy-wrapper .row .col-lg-4:nth-child(2),
+  .casinos-italy .casinos-italy-wrapper .row .col-lg-4:nth-child(3) {
+    margin-top: 30px;
+  }
+  .casinos-italy .casinos-italy-wrapper {
+    padding: 42px 0 0 0;
+  }
+  .casinos-italy {
+    top: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+    padding: 0;
+  }
+  section.scommesses-wrapper .scommesses-inner .game-inner-text {
+    height: auto;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.contact-wrapepr .form-wrapper .form_div {
+    display: flex;
+    flex-direction: column;
+  }
+  section.contact-wrapepr .contact-wrapepr-inner .row {
+    flex-direction: column-reverse;
+  }
+  section.contact-wrapepr {
+    padding: 80px 0 0;
+  }
+  .contact-item.text-center {
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
