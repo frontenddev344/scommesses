@@ -49,6 +49,10 @@ ul {
     width: 100%;
 }
 
+a.site-logo img {
+    max-width:  200px;
+}
+
 .page-header.is-sticky {
     position: fixed;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -201,6 +205,7 @@ section.banner-sectio {
         font-weight: 600;
 
     }
+
     .casinos-italy-wrapper {
         padding: 100px 0 80px 0;
 
