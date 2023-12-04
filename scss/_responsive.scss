@@ -68,10 +68,15 @@
     }
 
     footer .footer-menu h3 {
-        margin:16px 0;
+        margin: 16px 0;
     }
+
     .contact-item.text-center {
         margin-bottom: 40px;
+    }
+
+    section.contact-wrapepr .contact-wrapepr-inner .row {
+        flex-direction: column-reverse;
     }
 }
 
@@ -81,9 +86,7 @@
         flex-direction: column;
     }
 
-    section.contact-wrapepr .contact-wrapepr-inner .row {
-        flex-direction: column-reverse;
-    }
+
 
     section.contact-wrapepr {
         padding: 80px 0 0;
