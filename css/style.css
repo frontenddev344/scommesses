@@ -730,6 +730,9 @@ section.missione-wrapper .missione p span {
   footer .footer-menu h3 {
     margin: 16px 0;
   }
+  .contact-item.text-center {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 767px) {
   section.contact-wrapepr .form-wrapper .form_div {
@@ -741,9 +744,6 @@ section.missione-wrapper .missione p span {
   }
   section.contact-wrapepr {
     padding: 80px 0 0;
-  }
-  .contact-item.text-center {
-    margin-bottom: 40px;
   }
   section.banner-sectio .bnr-text p {
     max-width: 100%;
