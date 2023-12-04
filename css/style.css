@@ -736,6 +736,9 @@ section.missione-wrapper .missione p span {
   section.contact-wrapepr .contact-wrapepr-inner .row {
     flex-direction: column-reverse;
   }
+  section.banner-sectio .bnr-text p {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   section.contact-wrapepr .form-wrapper .form_div {
@@ -744,9 +747,6 @@ section.missione-wrapper .missione p span {
   }
   section.contact-wrapepr {
     padding: 80px 0 0;
-  }
-  section.banner-sectio .bnr-text p {
-    max-width: 100%;
   }
 }
 

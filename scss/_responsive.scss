@@ -77,6 +77,10 @@
 
     section.contact-wrapepr .contact-wrapepr-inner .row {
         flex-direction: column-reverse;
+
+    }
+    section.banner-sectio .bnr-text p {
+        max-width: 100%;
     }
 }
 
@@ -86,15 +90,8 @@
         flex-direction: column;
     }
 
-
-
     section.contact-wrapepr {
         padding: 80px 0 0;
     }
 
-
-
-    section.banner-sectio .bnr-text p {
-        max-width: 100%;
-    }
 }
