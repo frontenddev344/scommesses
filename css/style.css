@@ -650,9 +650,10 @@ section.contact-wrapepr .contact-item .contact-thumb::after {
   z-index: 1 !important;
   border-color: #25374f !important;
 }
-section.contact-wrapepr .contact-item .contact-thumb img {
-  width: auto;
-  z-index: 2;
+section.contact-wrapepr .contact-item .contact-thumb i {
+  color: white;
+  z-index: 1;
+  font-size: 20px;
 }
 section.contact-wrapepr .contact-item .contact-content h6 {
   color: #fff;
