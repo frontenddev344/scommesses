@@ -105,6 +105,10 @@ a.site-logo img {
                 &:hover {
                     background: #cccccc42;
                 }
+
+                &.active {
+                    background: #cccccc42;
+                }
             }
         }
     }

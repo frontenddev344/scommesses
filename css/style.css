@@ -100,6 +100,9 @@ a.site-logo img {
 .site-navbar ul li a:hover {
   background: rgba(204, 204, 204, 0.2588235294);
 }
+.site-navbar ul li a.active {
+  background: rgba(204, 204, 204, 0.2588235294);
+}
 
 .nav-toggler {
   border: 3px solid transparent;
