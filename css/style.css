@@ -256,6 +256,7 @@ section.banner-sectio .bnr-text p {
   display: inline-block;
   border: 1px solid #2e3986;
   transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
 }
 .casinos-italy .casinos-italy-wrapper .box-section .box-text .box-btn a:hover {
   background-color: transparent;
@@ -313,6 +314,10 @@ footer .footer-logo ul li {
 footer .footer-logo ul li i {
   color: #fff;
   font-size: 16px;
+  transition: all 0.3s;
+}
+footer .footer-logo ul li i:hover {
+  transform: translateY(-6px);
 }
 footer .footer-menu h3 {
   color: #fff;
@@ -326,6 +331,10 @@ footer .footer-menu ul li a {
   font-family: "Montserrat", sans-serif;
   padding: 10px 0;
   display: inline-block;
+  transition: all 0.3s;
+}
+footer .footer-menu ul li a:hover {
+  padding-left: 10px;
 }
 footer .footer-menu ul li a i {
   padding: 0 10px 0px 0;

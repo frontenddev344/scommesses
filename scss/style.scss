@@ -272,6 +272,7 @@ section.banner-sectio {
                         display: inline-block;
                         border: 1px solid $colo-sticky;
                         transition: all 0.3s ease-in-out;
+                        text-transform: capitalize;
 
                         &:hover {
                             background-color: transparent;
@@ -341,7 +342,12 @@ footer {
 
             i {
                 color: $color_white;
-                font-size: 16px
+                font-size: 16px;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: translateY(-6px);
+                }
             }
         }
     }
@@ -362,6 +368,11 @@ footer {
                     font-family: "Montserrat", sans-serif;
                     padding: 10px 0;
                     display: inline-block;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        padding-left: 10px;
+                    }
 
                     i {
                         padding: 0 10px 0px 0;
@@ -745,7 +756,8 @@ section.casino-inner-page.ovenezia {
     @include bg-pro;
     background-position: center;
 }
-section.casino-inner-page.perla{
+
+section.casino-inner-page.perla {
     background: url(../img/Casino-pearl.jpeg);
     @include bg-pro;
     background-position: center;
