@@ -218,7 +218,8 @@ section.banner-sectio .bnr-text p {
   justify-content: center;
   margin-top: 50px;
 }
-.casinos-italy .casinos-italy-wrapper .row .col-lg-4:last-child {
+.casinos-italy .casinos-italy-wrapper .row .col-lg-6:nth-child(3),
+.casinos-italy .casinos-italy-wrapper .row .col-lg-6:last-child {
   margin-top: 30px;
 }
 .casinos-italy .casinos-italy-wrapper .box-section {
@@ -780,8 +781,8 @@ section.casino-inner-page.perla {
     max-height: 100vh;
     overflow: visible;
   }
-  .casinos-italy .casinos-italy-wrapper .row .col-lg-4:nth-child(2),
-  .casinos-italy .casinos-italy-wrapper .row .col-lg-4:nth-child(3) {
+  .casinos-italy .casinos-italy-wrapper .row .col-lg-6:nth-child(2),
+  .casinos-italy .casinos-italy-wrapper .row .col-lg-6:nth-child(3) {
     margin-top: 30px;
   }
   .casinos-italy .casinos-italy-wrapper {
