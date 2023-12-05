@@ -300,34 +300,10 @@ section.scommesses-wrapper {
 
     .scommesses-inner {
         .game-inner-text {
-            background-color: $colo-sticky;
-            border-radius: 6px;
-            color: $color_white;
-            padding: 30px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            position: relative;
-
             p {
                 font-size: 15px;
                 line-height: 26px
             }
-        }
-
-        .game-inner-text::before {
-            width: 95%;
-            height: 95%;
-            border: 1px solid rgba(255, 255, 255, .04);
-            bottom: -12px;
-            left: 50%;
-            z-index: -1;
-            transform: translateX(-50%);
-            transition: all .2s ease;
-            border-radius: 3px;
-            background-color: rgb(227 225 217);
-            content: '';
-            position: absolute;
         }
     }
 }

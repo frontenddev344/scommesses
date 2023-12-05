@@ -277,33 +277,9 @@ section.banner-sectio .bnr-text p {
 section.scommesses-wrapper {
   padding: 40px 0 80px;
 }
-section.scommesses-wrapper .scommesses-inner .game-inner-text {
-  background-color: #2e3986;
-  border-radius: 6px;
-  color: #fff;
-  padding: 30px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
 section.scommesses-wrapper .scommesses-inner .game-inner-text p {
   font-size: 15px;
   line-height: 26px;
-}
-section.scommesses-wrapper .scommesses-inner .game-inner-text::before {
-  width: 95%;
-  height: 95%;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  bottom: -12px;
-  left: 50%;
-  z-index: -1;
-  transform: translateX(-50%);
-  transition: all 0.2s ease;
-  border-radius: 3px;
-  background-color: rgb(227, 225, 217);
-  content: "";
-  position: absolute;
 }
 
 footer {
