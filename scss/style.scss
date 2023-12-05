@@ -99,8 +99,12 @@ a.site-logo img {
                 transition: all 0.2s ease-out 0s;
                 font-family: "Montserrat", sans-serif;
                 font-size: 18px;
+                transition: all 0.3s;
+                background-color: transparent;
 
-                &:hover {}
+                &:hover {
+                    background: #cccccc42;
+                }
             }
         }
     }
@@ -405,7 +409,8 @@ section.terms {
 
     h2 {
         color: $color_white;
-        text-align: center
+        text-align: center;
+        text-transform: capitalize;
     }
 }
 
@@ -593,6 +598,7 @@ section.contact-wrapepr {
             font-size: 16px;
             border: 1px solid $colo-sticky;
             transition: all 0.3s ease-in-out;
+            text-transform: capitalize;
 
             &:hover {
                 background-color: transparent;

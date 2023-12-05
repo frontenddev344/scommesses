@@ -94,7 +94,13 @@ a.site-logo img {
   transition: all 0.2s ease-out 0s;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  transition: all 0.3s;
+  background-color: transparent;
 }
+.site-navbar ul li a:hover {
+  background: rgba(204, 204, 204, 0.2588235294);
+}
+
 .nav-toggler {
   border: 3px solid transparent;
   padding: 5px;
@@ -377,6 +383,7 @@ section.terms .hero-overlly {
 section.terms h2 {
   color: #fff;
   text-align: center;
+  text-transform: capitalize;
 }
 
 section.term {
@@ -559,6 +566,7 @@ section.contact-wrapepr .form-wrapper input#sub {
   font-size: 16px;
   border: 1px solid #2e3986;
   transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
 }
 section.contact-wrapepr .form-wrapper input#sub:hover {
   background-color: transparent;
