@@ -917,6 +917,9 @@ section.home-main .container {
   header.page-header.mobile_header {
     background: #2e3986;
   }
+  .paragraph {
+    padding: 19px 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
