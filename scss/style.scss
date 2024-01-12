@@ -9,11 +9,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-seri;
 }
-
 p {
     font-family: "Montserrat", sans-serif;
 }
-
 li {
     list-style: none;
 }
@@ -750,6 +748,115 @@ section.casino-inner-page.perla {
     @include bg-pro;
     background-position: center;
 }
+
+
+
+  /*  Mobile betting  */
+  .table.brand-table-new {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+  }
+  
+  .brand-table table tr td {
+    padding: 30px 15px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .mob-pro-score-main {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  span.mob-pro-score-main strong {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 15px;
+  }
+  
+  .rateit-now {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8b8b8b;
+  }
+  
+  .stars-main.rate {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .first-bonus {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2e3986;
+  }
+  
+  .second-bonus {
+    padding-bottom: 10px;
+  }
+  
+  .second-bonus {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+  }
+  
+  a.sign {
+    font-weight: 600;
+  }
+  
+  a.sign {
+    background: #2e3986;
+    color: #fff;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .mob-pro-score-main strong {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 15px;
+  }
+  
+  .rated-star i {
+    color: #fb0;
+    font-size: 12px;
+  }
+  
+  td {
+    width: 50% !important;
+  }
+  
+  .abt-cols h2 {
+    margin-top: 100px;
+    font-size: 20px;
+  }
+  
+  
+  section.home-main .container {
+    width: 100% !important;
+  }
 
 
 @import'./responsive';
