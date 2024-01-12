@@ -909,6 +909,7 @@ section.home-main .container {
 @media screen and (max-width: 575px) {
   .mobile-table {
     display: block;
+    padding-top: 40px;
   }
   main.desktop_main {
     display: none;
