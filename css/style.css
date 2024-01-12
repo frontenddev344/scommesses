@@ -910,6 +910,12 @@ section.home-main .container {
   .mobile-table {
     display: block;
   }
+  main.desktop_main {
+    display: none;
+  }
+  header.page-header.mobile_header {
+    background: #2e3986;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
